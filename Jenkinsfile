@@ -16,9 +16,7 @@ pipeline {
                     ]
                 ]
                       junit 'build/test-results/test/TEST-Matrix.xml'
-
-                
-  
+           
     }
     }
     
