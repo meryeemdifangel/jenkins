@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Test')
     {
-    steps{
+    steps{ 
     bat 'gradlew test'
    archiveArtifacts 'build/test-results/'
                 cucumber reportTitle: 'Cucumber report',
