@@ -29,10 +29,9 @@ pipeline {
     
       
        stage("Quality gate") {
-         steps{
-                  waitForQualityGate true
-
-         }
+       steps {
+                waitForQualityGate abortPipeline: true
+            }
     
   }
 
