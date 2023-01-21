@@ -26,7 +26,7 @@ pipeline {
             steps {
                                 withSonarQubeEnv('sonar'){
                 bat 'gradle sonarqube'
-                                }
+                               }
             }
          }
     
