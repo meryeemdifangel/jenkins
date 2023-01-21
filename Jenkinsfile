@@ -5,6 +5,7 @@ pipeline {
     {
     steps{
     bat 'gradlew test'
+    archiveArtifacts 'build/test-results/'
     }
     }
   }
