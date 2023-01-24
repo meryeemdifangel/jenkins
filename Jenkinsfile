@@ -1,7 +1,7 @@
 pipeline {
   agent any 
   stages {
-    stage('Test')
+    stage('Test') 
     { 
     steps{ 
     bat 'gradlew test' 
