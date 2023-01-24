@@ -44,7 +44,7 @@ pipeline {
             }
         }
 
-         stage("deployyy") {
+         stage("deploy") {
             steps {
                 bat 'gradle publish'
 
@@ -55,7 +55,7 @@ pipeline {
     post {
         always {
         echo "End of Pipeline process"
-        mail(subject: 'End of Process Pipeline : Result incoming ...', body: 'End of Process Pipeline : Result incoming ...', from: 'jm_dif@esi.dz', to: 'jm_dif@esi.dz')
+        mail(subject: 'End of Process Pipeline : Result incoming ...', body: 'End of Process Pipeline : Result incoming ...', from: 'jm_dif@esi.dz', to: 'marissadjeff@gmail.com')
       }
       failure {
         echo "Deployment failed"
