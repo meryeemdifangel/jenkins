@@ -59,11 +59,11 @@ pipeline {
       }
       failure {
         echo "Deployment failed"
-        mail(subject: 'Deployment failed', body: 'Deployment failed ', from: 'jm_dif@esi.dz', to: 'jm_dif@esi.dz')
+        mail(subject: 'Deployment failed', body: 'Deployment failed ', from: 'jm_dif@esi.dz', to: 'marissadjeff@gmail.com')
       }
       success {
         echo "Deployment succeeded"
-        mail(subject: 'Deployment succeeded', body: 'Deployment succeeded ', from: 'jm_dif@esi.dz', to: 'jm_dif@esi.dz')
+        mail(subject: 'Deployment succeeded', body: 'Deployment succeeded ', from: 'jm_dif@esi.dz', to: 'marissadjeff@gmail.com')
         notifyEvents message: 'Hello folks : <b>Deployment succeeded</b> ! ', token: '468PjL-D39IzKutPcnFPLs4vG2bOZWgi'
       }
     }
