@@ -55,7 +55,7 @@ pipeline {
     
     
   }
-  
+  post {
         always {
         echo "End of Pipeline process"
         mail(subject: 'End of Process Pipeline : Result incoming ...', body: 'End of Process Pipeline : Result incoming ...', from: 'jm_dif@esi.dz', to: 'jm_dif@esi.dz')
