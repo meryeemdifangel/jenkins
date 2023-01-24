@@ -50,10 +50,6 @@ pipeline {
 
             }
         }
-    
-   
-    
-    
   }
   post {
         always {
